@@ -1,0 +1,59 @@
+﻿<Window x:Class="WpfApp1.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WpfApp1"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800">
+    <StackPanel>
+        <TextBlock>
+            Привет, тебе нужно ответить на 4 вопроса по математике
+        </TextBlock>
+        
+        <TextBlock>
+            Вопрос 1: Сколько будет 2+2?
+        </TextBlock>
+
+        <StackPanel Name="Question1">
+            <RadioButton Name="Answer_1_1" GroupName="Q1" Content="3"/>
+            <RadioButton Name="Answer_1_2" GroupName="Q1" Content="4" Tag="Correct"/>
+            <RadioButton Name="Answer_1_3" GroupName="Q1" Content="5"/>
+            <RadioButton Name="Answer_1_4" GroupName="Q1" Content="6"/>
+        </StackPanel>
+
+        <TextBlock>
+            Вопрос 2: Сколько углов у треугольника?
+        </TextBlock>
+
+        <StackPanel Name="Question2">
+            <RadioButton Name="Answer_2_1" GroupName="Q2" Content="2"/>
+            <RadioButton Name="Answer_2_2" GroupName="Q2" Content="4"/>
+            <RadioButton Name="Answer_2_3" GroupName="Q2" Content="3" Tag="Correct"/>
+            <RadioButton Name="Answer_2_4" GroupName="Q2" Content="10"/>
+        </StackPanel>
+
+        <TextBlock>
+            Вопрос 3: kx+b=y. Какой тип функции?
+        </TextBlock>
+
+        <StackPanel Name="Question3">
+            <RadioButton Name="Answer_3_1" GroupName="Q3" Content="Линейный"/>
+            <RadioButton Name="Answer_3_2" GroupName="Q3" Content="Квадратный"/>
+            <RadioButton Name="Answer_3_3" GroupName="Q3" Content="Кубический"/>
+            <RadioButton Name="Answer_3_4" GroupName="Q3" Content="Константный"/>
+        </StackPanel>
+
+        <TextBlock>
+            Вопрос 4: Чему равен катет прямоугольного треугольника напротив угла 30 градусов?
+        </TextBlock>
+
+        <StackPanel Name="Question4">
+            <RadioButton Name="Answer_4_1" GroupName="Q4" Content="2"/>
+            <RadioButton Name="Answer_4_2" GroupName="Q4" Content="Половина длины гипотенузы"/>
+            <RadioButton Name="Answer_4_3" GroupName="Q4" Content="Не знаю"/>
+            <RadioButton Name="Answer_4_4" GroupName="Q4" Content="30 градусов"/>
+        </StackPanel>
+        <Button Content="Отправить ответ" Height="48" Margin="661,0,0,0" Click="Button_Click"/>
+    </StackPanel>
+</Window>
