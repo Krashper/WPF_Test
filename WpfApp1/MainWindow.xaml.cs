@@ -30,28 +30,28 @@ namespace WpfApp1
             byte correctAnswers = 0;
             foreach (RadioButton radioButton in Question1.Children)
             {
-                if (radioButton.IsChecked == true && radioButton.Content == "4")
+                if (radioButton.IsChecked == true && radioButton.Name == "Answer_1_2")
                 {
                     correctAnswers++;
                 }
             }
             foreach (RadioButton radioButton in Question2.Children)
             {
-                if (radioButton.IsChecked == true && radioButton.Content == "3")
+                if (radioButton.IsChecked == true && radioButton.Name == "Answer_2_3")
                 {
                     correctAnswers++;
                 }
             }
             foreach (RadioButton radioButton in Question3.Children)
             {
-                if (radioButton.IsChecked == true && radioButton.Content == "Линейный")
+                if (radioButton.IsChecked == true && radioButton.Name == "Answer_3_1")
                 {
                     correctAnswers++;
                 }
             }
             foreach (RadioButton radioButton in Question4.Children)
             {
-                if (radioButton.IsChecked == true && radioButton.Content == "Половина длины гипотенузы")
+                if (radioButton.IsChecked == true && radioButton.Name == "Answer_4_2")
                 {
                     correctAnswers++;
                 }
